@@ -1,0 +1,143 @@
+.game15Block {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-right: 0;
+  position: relative;
+  left: 0;
+  top: 0;
+  list-style: none;
+  width: 100%;
+  padding-top: 100%;
+  background-image: url(../imgs/box.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.game15Block__count {
+  height: 10%;
+  width: 50%;
+  background-color: burlywood;
+  border: 1px solid brown;
+  border-radius: 10000px;
+  position: absolute;
+  left: 0;
+  top: -11%;
+  display: none;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+.game15Block__bestScore {
+  height: 10%;
+  width: 50%;
+  background-color: burlywood;
+  border: 1px solid brown;
+  border-radius: 10000px;
+  position: absolute;
+  left: 50%;
+  top: -11%;
+  display: none;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+.game15Block__play-field {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+.game15Block__button {
+  width: 50%;
+  height: 15%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #a56c2a;
+  border-radius: 50000000px;
+  position: absolute;
+  left: 23%;
+}
+.game15Block__button--start {
+  background-image: url(../imgs/start.jpg);
+  top: 42%;
+}
+.game15Block__button--decrease {
+  background-image: url(../imgs/Decrease.jpg);
+  top: 23%;
+  display: none;
+}
+.game15Block__button--random {
+  top: 61%;
+  background-image: url(../imgs/Random.jpg);
+  display: none;
+}
+.game15Block__chip {
+  width: 25%;
+  height: 25%;
+  box-sizing: border-box;
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10%;
+  transition: left 1s, top 1s, transform 1s;
+  position: absolute;
+  top: -100vh;
+  left: 50%;
+}
+.game15Block__chip--1 {
+  background-image: url(../imgs/1.jpg);
+}
+.game15Block__chip--2 {
+  background-image: url(../imgs/2.jpg);
+}
+.game15Block__chip--3 {
+  background-image: url(../imgs/3.jpg);
+}
+.game15Block__chip--4 {
+  background-image: url(../imgs/4.jpg);
+}
+.game15Block__chip--5 {
+  background-image: url(../imgs/5.jpg);
+}
+.game15Block__chip--6 {
+  background-image: url(../imgs/6.jpg);
+}
+.game15Block__chip--7 {
+  background-image: url(../imgs/7.jpg);
+}
+.game15Block__chip--8 {
+  background-image: url(../imgs/8.jpg);
+}
+.game15Block__chip--9 {
+  background-image: url(../imgs/9.jpg);
+}
+.game15Block__chip--10 {
+  background-image: url(../imgs/10.jpg);
+}
+.game15Block__chip--11 {
+  background-image: url(../imgs/11.jpg);
+}
+.game15Block__chip--12 {
+  background-image: url(../imgs/12.jpg);
+}
+.game15Block__chip--13 {
+  background-image: url(../imgs/13.jpg);
+}
+.game15Block__chip--14 {
+  background-image: url(../imgs/14.jpg);
+}
+.game15Block__chip--15 {
+  background-image: url(../imgs/15.jpg);
+}
+
+.container {
+  display: flex;
+  width: 450px;
+  margin: 100px auto;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,175 @@
+
+.game15Block {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-right: 0;
+  position: relative;
+  left: 0;
+  top: 0;
+  list-style: none;
+  width: 100%;
+  padding-top: 100%;
+  background-image: url(../imgs/box.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__count {
+    height: 10%;
+    width: 50%;
+    background-color: burlywood;
+    border: 1px solid brown;
+    border-radius: 10000px;
+    position: absolute;
+    left: 0;
+    top: -11%;
+    display: none;
+    padding-left: 5px;
+    box-sizing: border-box;
+  }
+
+  &__bestScore {
+    height: 10%;
+    width: 50%;
+    background-color: burlywood;
+    border: 1px solid brown;
+    border-radius: 10000px;
+    position: absolute;
+    left: 50%;
+    top: -11%;
+    display: none;
+    padding-left: 5px;
+    box-sizing: border-box;
+  }
+
+  &__play-field {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+  }
+
+  &__button {
+    
+    width: 50%;
+    height: 15%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid rgb(165, 108, 42);
+    border-radius: 50000000px;
+    position: absolute;
+    left: 23%;
+
+    &--start {
+      background-image: url(../imgs/start.jpg);
+      top: 42%;
+    }
+    &--decrease {
+      background-image: url(../imgs/Decrease.jpg);
+      top: 23%;
+      display: none;
+    };
+    &--random {
+      top: 61%;
+      background-image: url(../imgs/Random.jpg);
+      display: none;
+    }
+
+  }
+  &__chip {
+    
+    width: 25%;
+    height: 25%;
+    box-sizing: border-box;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    transition: left 1s, top 1s, transform 1s;
+    position: absolute;
+    top: -100vh;
+    left: 50%;
+    
+    &--1 {
+      background-image: url(../imgs/1.jpg);
+      
+      
+    }
+    &--2 {
+      background-image: url(../imgs/2.jpg);
+      
+      
+    }
+    &--3 {
+      background-image: url(../imgs/3.jpg);
+      
+      
+    }
+    &--4 {
+      background-image: url(../imgs/4.jpg);
+      
+      
+    }
+    &--5 {
+      background-image: url(../imgs/5.jpg);
+      
+      
+    }
+    &--6 {
+      background-image: url(../imgs/6.jpg);
+      
+      
+    }
+    &--7 {
+      background-image: url(../imgs/7.jpg);
+      
+      
+    }
+    &--8 {
+      background-image: url(../imgs/8.jpg);
+      
+      
+    }
+    &--9 {
+      background-image: url(../imgs/9.jpg);
+     
+      
+    }
+    &--10 {
+      background-image: url(../imgs/10.jpg);
+      
+      
+    }
+    &--11 {
+      background-image: url(../imgs/11.jpg);
+      
+      
+    }
+    &--12 {
+      background-image: url(../imgs/12.jpg);
+      
+      
+    }
+    &--13 {
+      background-image: url(../imgs/13.jpg);
+      
+      
+    }
+    &--14 {
+      background-image: url(../imgs/14.jpg);
+      
+      
+    }
+    &--15 {
+      background-image: url(../imgs/15.jpg);
+      
+      
+    }
+  }
+}
