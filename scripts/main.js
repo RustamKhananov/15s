@@ -67,19 +67,19 @@ function gameFifteen(event) {
     playField.addEventListener('click', oneMoove);
 
     function oneMoove(event) {
-      if(event.target.tagName !== 'LI') {
+      if (event.target.tagName !== 'LI') {
         return;
       }
       orderChange(event);
       // randomCoords = [...coords]; use for testing only
-      if(JSON.stringify(randomCoords) === JSON.stringify(coords)) {
-        if(bestRes >= mooveCount) {
+      if (JSON.stringify(randomCoords) === JSON.stringify(coords)) {
+        if (bestRes >= mooveCount) {
           bestRes = mooveCount;
           bestScoreElement.textContent = `Best: ${bestRes}`;
         };
         alert(`You are winner!!! Your Score: ${mooveCount}`);
         backToStart();
-        
+
 
       }
     };
@@ -100,6 +100,7 @@ function gameFifteen(event) {
         randomCoords[targetIndex][0] = emptyCellLeft;
         event.target.style.left = `${emptyCellLeft}px`;
         emptyCellLeft -= chipWidth;
+        randomCoords[15][0] = emptyCellLeft;
         mooveCount++;
         mooveCountElement.textContent = `Score: ${mooveCount}`;
         return;
@@ -110,6 +111,7 @@ function gameFifteen(event) {
         randomCoords[targetIndex][0] = emptyCellLeft;
         event.target.style.left = `${emptyCellLeft}px`;
         emptyCellLeft += chipWidth;
+        randomCoords[15][0] = emptyCellLeft;
         mooveCount++;
         mooveCountElement.textContent = `Score: ${mooveCount}`;
         return;
@@ -120,6 +122,7 @@ function gameFifteen(event) {
         randomCoords[targetIndex][1] = emptyCellTop;
         event.target.style.top = `${emptyCellTop}px`;
         emptyCellTop -= chipHeight;
+        randomCoords[15][1] = emptyCellTop;
         mooveCount++;
         mooveCountElement.textContent = `Score: ${mooveCount}`;
         return;
@@ -130,6 +133,7 @@ function gameFifteen(event) {
         randomCoords[targetIndex][1] = emptyCellTop;
         event.target.style.top = `${emptyCellTop}px`;
         emptyCellTop += chipHeight;
+        randomCoords[15][1] = emptyCellTop;
         mooveCount++;
         mooveCountElement.textContent = `Score: ${mooveCount}`;
         return;
@@ -161,6 +165,15 @@ function gameFifteen(event) {
 
     if (order === 'random') {
       randomCoords = [...randomCoords.slice(0, 15).sort((a, b) => Math.random() - 0.5), randomCoords[15]];
+
+      // Temporary for testing
+      // randomCoords = [...coords];
+      // let m = randomCoords[15];  
+      // randomCoords[15] = [...randomCoords[14]];
+      // randomCoords[14] = [...m];
+      // emptyCellTop = randomCoords[15][1];
+      // emptyCellLeft = randomCoords[15][0];
+      
       for (let i = 0; i < 15; i++) {
         chips[i].style.display = 'block';
         chips[i].style.top = `${randomCoords[i][1]}px`;
