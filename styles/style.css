@@ -17,9 +17,6 @@
 .game15Block__count {
   height: 10%;
   width: 50%;
-  background-color: burlywood;
-  border: 1px solid brown;
-  border-radius: 10000px;
   position: absolute;
   left: 0;
   top: -11%;
@@ -30,9 +27,6 @@
 .game15Block__bestScore {
   height: 10%;
   width: 50%;
-  background-color: burlywood;
-  border: 1px solid brown;
-  border-radius: 10000px;
   position: absolute;
   left: 50%;
   top: -11%;
@@ -134,8 +128,14 @@
   background-image: url(../imgs/15.jpg);
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   display: flex;
+  max-width: 100vw;
   width: 450px;
   margin: 100px auto;
 }

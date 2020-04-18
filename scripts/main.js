@@ -51,11 +51,11 @@ function gameFifteen(event) {
 
     mooveCountElement.style.display = 'block';
     mooveCountElement.style.lineHeight = `${mooveCountElement.offsetHeight}px`;
-    mooveCountElement.style.fontSize = `${mooveCountElement.offsetHeight - 4}px`;
+    mooveCountElement.style.fontSize = `${mooveCountElement.offsetHeight - 10}px`;
     mooveCountElement.textContent = `Score: ${mooveCount}`;
     bestScoreElement.style.display = 'block';
-    bestScoreElement.lineHeight = `${bestScoreElement.offsetHeight}px`;
-    bestScoreElement.style.fontSize = `${bestScoreElement.offsetHeight - 4}px`;
+    bestScoreElement.style.lineHeight = `${bestScoreElement.offsetHeight}px`;
+    bestScoreElement.style.fontSize = `${bestScoreElement.offsetHeight - 10}px`;
     bestScoreElement.textContent = `Best: ${bestRes}`;
 
     document.querySelector('.game15Block__button--decrease').style.display = 'none';
