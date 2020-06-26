@@ -1,2 +1,2 @@
 # 15s
-15 game
+A game known to everyone since childhood. Just extrude the numbers in the correct order. A click on the chip moves it.
